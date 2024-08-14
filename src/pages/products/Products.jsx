@@ -66,7 +66,14 @@ function Products() {
         disableSelectionOnClick
         pageSize={3}
         checkboxSelection
-      />
+
+        initialState={{
+          pagination: {
+            paginationModel: {
+              pageSize: 3,
+            },
+          },
+        }}/>
     </div>
   );
 }
